@@ -29,7 +29,8 @@
         width: 100%;
         height: var(--header-height);
         justify-self: start;
-
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
     }
 
       body {
@@ -40,6 +41,8 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
     }
 
     .innerbody {
@@ -118,8 +121,62 @@
       border-width: 1px;
       border-color: rgba(0, 0, 0, 0.459);
       background-color: var(--tertiary-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
+    .container h2 {
+      height: 10%;
+      width: 100%;
+      text-align: center;
+    }
+
+
+
+    .grid {
+      width: 90%;
+      height: 80%;
+      display: grid;
+      gap: 10px;
+      grid-gap: 0;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));;
+    }
+
+    .gamecard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s ease-in-out;
+
+    }
+
+    @media (orientation: portrait) {
+      .container {
+        width: 90%;
+      }
+    }
+
+    .gameImage {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 5px;
+      object-fit: contain;
+      
+    }
+
+    .noy {
+      /* game icon that isn't out yet */
+
+      filter: sepia();
+    }
+
+    .gamecard:hover {
+      transform: scale(1.1, 1.1);
+      cursor: pointer;
+    }
 
     </style>
 
@@ -142,7 +199,26 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
         </div>
 
         <div class="container blurbg">
+          <div class="grid">
+          <div class="gamecard noy">
+            <img alt="gameImage" class="gameImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Pile_of_playing_cards.jpg/1024px-Pile_of_playing_cards.jpg">
+            <h5>Snap</h5>
+          </div>
+          <div class="gamecard noy">
+            <img alt="gameImage" class="gameImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Pile_of_playing_cards.jpg/1024px-Pile_of_playing_cards.jpg">
+            <h5>Gofish</h5>
+          </div>
 
+          <div class="gamecard noy">
+            <img alt="gameImage" class="gameImage" src="/assets/images/colorclash.jpg">
+            <h5>Color Clash</h5>
+          </div>
+
+          <div class="gamecard noy">
+            <img alt="gameImage" class="gameImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Pile_of_playing_cards.jpg/1024px-Pile_of_playing_cards.jpg">
+            <h5>21</h5>
+          </div>
+        </div>
         </div>
     </div>
   </body>
