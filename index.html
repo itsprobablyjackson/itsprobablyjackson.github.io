@@ -57,28 +57,10 @@
         
     }
 
-    ::-webkit-scrollbar {
-      width: 10px;
-  
-      background-color: rgba(255, 255, 255, 0);
-      -webkit-backdrop-filter: blur(2px);
-      backdrop-filter: blur(2px);
-    }
-
-
-    ::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: rgb(170, 170, 170);
-      width: 1px;
-      height: 1px;
-      -webkit-backdrop-filter: blur(2px);
-      backdrop-filter: blur(2px);
-
-    }
 
     .blind {
         width: 100%;
-        height: var(--blind-height);
+        min-height: var(--blind-height);
 
         background-color: var(--tertiary-color);
         -webkit-backdrop-filter: blur(2px);
@@ -132,6 +114,25 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    .blindContainer {
+      margin-top: 20px;
+      width: 700px;
+      border-radius: 5px;
+      min-height: 300px;
+      border: solid;
+      border-width: 1px;
+      border-color: rgba(0, 0, 0, 0.459);
+      background-color: var(--tertiary-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    .blindContainer h1 span {
+      color: orange;
     }
 
     .container h2 {
@@ -192,6 +193,34 @@
     
     }
 
+    .playnow {
+      background-color: orange;
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      border-radius: 5px;
+      border: none;
+      min-width: 120px;
+      min-height: 50px;
+      text-align: center;
+      transition: all 0.2s ease-in-out;
+      font-weight: 500;
+
+    }
+
+    .playnow:hover {
+      cursor: pointer;
+      transform: scale(1.1, 1.1);
+      background-color: rgb(255, 166, 0);
+    }
+
+    .playnow:active {
+      transform: scale(0.9, 0.9);
+    }
+
+    .orangespan {
+      color: orange;
+    }
+
     </style>
 
 <script src="
@@ -209,16 +238,31 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
 
     <div class="innerbody">
         <div class="blind">
-          <h1>Topaz Network</h1>
+          <h1><span class="orangespan">Topaz</span> Network</h1>
           <h5>Games, Tools, and pure fun.</h5>
         </div>
 
+        <div class="blindContainer">
+          <h1>Fun <span>anywhere</span>.</h1>
+
+          <button class="playnow">Play Now</button>
+        </div>
+
         <div class="container blurbg">
+
+          <h1>Making School <span class="orangespan">easier</span>.</h1>
+
           <div class="grid">
             <div class="gamecard">
               <img class="gameImage" alt="game"  src="./assets/images/circumfrencecalc.png">
               <h5>Circumfrence Calculator</h5>
 
+            </div>
+
+            <div class="gamecard">
+              <img class="gameImage" alt="game"  src="./assets/images/squareroot.png">
+              <h5>Hypotenuse Calculator</h5>
+              
             </div>
         </div>
         </div>
