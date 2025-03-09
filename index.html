@@ -24,6 +24,8 @@
 
         --blind-height: 80px;
 
+        --main-theme-color: rgb(0, 110, 255);
+
     }
 
       header {
@@ -33,6 +35,14 @@
         justify-self: start;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      margin-left: 10px;
     }
 
       body {
@@ -119,6 +129,7 @@
     .blindContainer {
       margin-top: 20px;
       width: 700px;
+      max-width: 100%;
       border-radius: 5px;
       min-height: 300px;
       border: solid;
@@ -131,9 +142,6 @@
     }
 
 
-    .blindContainer h1 span {
-      color: orange;
-    }
 
     .container h2 {
       height: 10%;
@@ -194,7 +202,7 @@
     }
 
     .playnow {
-      background-color: orange;
+      background-color: var(--main-theme-color);
       color: white;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       border-radius: 5px;
@@ -210,15 +218,19 @@
     .playnow:hover {
       cursor: pointer;
       transform: scale(1.1, 1.1);
-      background-color: rgb(255, 166, 0);
+      
     }
 
     .playnow:active {
       transform: scale(0.9, 0.9);
     }
 
+    .mainthemecolor {
+      color: var(--main-theme-color);
+    }
+
     .orangespan {
-      color: orange;
+      color: var(--main-theme-color)
     }
 
     </style>
@@ -234,7 +246,9 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
 
     <script src="./assets/js/particlegen.js"></script>
 
-    <header></header>
+    <header class="mainheader">
+      <h1><span class="orangespan">Topaz</span> Network</h1>
+    </header>
 
     <div class="innerbody">
         <div class="blind">
@@ -243,7 +257,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
         </div>
 
         <div class="blindContainer">
-          <h1>Fun <span>anywhere</span>.</h1>
+          <h1>Fun <span class="orangespan">anywhere</span>.</h1>
 
           <button class="playnow">Play Now</button>
         </div>
@@ -268,4 +282,6 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
         </div>
     </div>
   </body>
+
+  <script src="./assets/js/header.js"></script>
 </html>
