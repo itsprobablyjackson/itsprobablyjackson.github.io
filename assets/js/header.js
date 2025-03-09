@@ -11,7 +11,7 @@ async function loadHeader() {
     newHeader.className = 'mainheader'
     newHeader.innerHTML = header
 
-    document.prepend(newHeader)
+    document.querySelector('body').prepend(newHeader)
 
 }
 
