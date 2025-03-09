@@ -7,11 +7,8 @@ async function loadHeader() {
 
     const header = await r.text()
 
-    const newHeader = document.createElement('header')
-    newHeader.className = 'mainheader'
-    newHeader.innerHTML = header
 
-    document.querySelector('body').prepend(newHeader)
+    document.querySelector('body').prepend(header)
 
 }
 
