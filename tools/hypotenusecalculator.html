@@ -132,7 +132,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
         const x = Number(document.querySelector('#xinput').value)
         const y = Number(document.querySelector('#yinput').value)
 
-        document.querySelector("#h").innerText = Math.sqrt(Math.sqrt(x) + Math.sqrt(y))
+        document.querySelector("#h").innerText = Math.sqrt((x * x) + (y * y))
     }
 
     document.querySelector("#xinput").addEventListener('input', () => {
