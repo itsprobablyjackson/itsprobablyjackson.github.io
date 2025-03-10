@@ -1,218 +1,224 @@
+   
 
-:root {
-    --primary-color: rgb(20, 20, 20);
-    --secondary-color: rgb(61, 61, 61);
-    --tertiary-color: rgba(0, 0, 0, 0.5);
-    
-    --header-height: 70px;
+      :root {
+        --primary-color: rgb(20, 20, 20);
+        --secondary-color: rgb(61, 61, 61);
+        --tertiary-color: rgba(0, 0, 0, 0.5);
+        
+        --header-height: 70px;
 
-    --blind-height: 80px;
+        --blind-height: 80px;
 
-    --main-theme-color: rgb(0, 110, 255);
+        --main-theme-color: rgb(0, 110, 255);
 
-}
+    }
 
-  header {
-    background-color: var(--secondary-color);
-    width: 100%;
-    height: var(--header-height);
-    justify-self: start;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-header h1 {
-  margin: 0;
-  margin-left: 10px;
-}
-
-  body {
-    background-color: var(--primary-color);
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-}
-
-.innerbody {
-    height: calc(100% - var(--header-height, 80px));
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: auto;
-    
-}
-
-
-.blind {
-    width: 100%;
-    min-height: var(--blind-height);
-
-    background-color: var(--tertiary-color);
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-
-    margin-top: 20px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.blind h1 {
-  color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0;
-}
-
-.blind h5 {
-  margin: 0;
-  font-weight: 200;
-}
-
-
-
-
-#particles-js {
-        position: absolute;
+      header {
+        background-color: var(--secondary-color);
         width: 100%;
-        height: 90vh;
-        z-index: -1;
+        height: var(--header-height);
+        justify-self: start;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 
+    header h1 {
+      margin: 0;
+      margin-left: 10px;
+    }
+
+      body {
+        background-color: var(--primary-color);
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+    }
+
+    .innerbody {
+        height: calc(100% - var(--header-height, 80px));
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        
+    }
+
+
+    .blind {
+        width: 100%;
+        min-height: var(--blind-height);
+
+        background-color: var(--tertiary-color);
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+
+        margin-top: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blind h1 {
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0;
+    }
+
+    .blind h5 {
+      margin: 0;
+      font-weight: 200;
+    }
+
+
+
+
+    #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 90vh;
+            z-index: -1;
+
+          }
+
+    .blurbg {
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(2px);
+      
+    }      
+
+    .container {
+      margin-top: 20px;
+      width: 700px;
+      border-radius: 5px;
+      min-height: 500px;
+      border: solid;
+      border-width: 1px;
+      border-color: rgba(0, 0, 0, 0.459);
+      background-color: var(--tertiary-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .blindContainer {
+      margin-top: 20px;
+      width: 700px;
+      max-width: 100%;
+      border-radius: 5px;
+      min-height: 300px;
+      border: solid;
+      border-width: 1px;
+      border-color: rgba(0, 0, 0, 0.459);
+      background-color: var(--tertiary-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+
+    .container h2 {
+      height: 10%;
+      width: 100%;
+      text-align: center;
+    }
+
+
+
+    .grid {
+      width: 90%;
+      height: 80%;
+      display: grid;
+      gap: 10px;
+      grid-gap: 0;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));;
+    }
+
+    .gamecard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s ease-in-out;
+      text-align: center;
+
+    }
+
+    .gamecard h5 {
+      margin: 0;
+    }
+
+    @media (orientation: portrait) {
+      .container {
+        width: 90%;
       }
+    }
 
-.blurbg {
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  
-}      
+    .shortcuts {
+      justify-self: flex-end;
+      height: 100%;
+    }
 
-.container {
-  margin-top: 20px;
-  width: 700px;
-  border-radius: 5px;
-  min-height: 500px;
-  border: solid;
-  border-width: 1px;
-  border-color: rgba(0, 0, 0, 0.459);
-  background-color: var(--tertiary-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    .gameImage {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 5px;
+      object-fit: contain;
+      
+    }
 
-.blindContainer {
-  margin-top: 20px;
-  width: 700px;
-  max-width: 100%;
-  border-radius: 5px;
-  min-height: 300px;
-  border: solid;
-  border-width: 1px;
-  border-color: rgba(0, 0, 0, 0.459);
-  background-color: var(--tertiary-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    .noy {
+      /* game icon that isn't out yet */
 
+      filter: sepia();
+    }
 
+    .gamecard:hover {
+      transform: scale(1.1, 1.1);
+      cursor: pointer;
+    
+    }
 
-.container h2 {
-  height: 10%;
-  width: 100%;
-  text-align: center;
-}
+    .playnow {
+      background-color: var(--main-theme-color);
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      border-radius: 5px;
+      border: none;
+      min-width: 120px;
+      min-height: 50px;
+      text-align: center;
+      transition: all 0.2s ease-in-out;
+      font-weight: 500;
 
+    }
 
+    .playnow:hover {
+      cursor: pointer;
+      transform: scale(1.1, 1.1);
+      
+    }
 
-.grid {
-  width: 90%;
-  height: 80%;
-  display: grid;
-  gap: 10px;
-  grid-gap: 0;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));;
-}
+    .playnow:active {
+      transform: scale(0.9, 0.9);
+    }
 
-.gamecard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-  text-align: center;
+    .mainthemecolor {
+      color: var(--main-theme-color);
+    }
 
-}
-
-.gamecard h5 {
-  margin: 0;
-}
-
-@media (orientation: portrait) {
-  .container {
-    width: 90%;
-  }
-}
-
-.gameImage {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 5px;
-  object-fit: contain;
-  
-}
-
-.noy {
-  /* game icon that isn't out yet */
-
-  filter: sepia();
-}
-
-.gamecard:hover {
-  transform: scale(1.1, 1.1);
-  cursor: pointer;
-
-}
-
-.playnow {
-  background-color: var(--main-theme-color);
-  color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  border-radius: 5px;
-  border: none;
-  min-width: 120px;
-  min-height: 50px;
-  text-align: center;
-  transition: all 0.2s ease-in-out;
-  font-weight: 500;
-
-}
-
-.playnow:hover {
-  cursor: pointer;
-  transform: scale(1.1, 1.1);
-  
-}
-
-.playnow:active {
-  transform: scale(0.9, 0.9);
-}
-
-.mainthemecolor {
-  color: var(--main-theme-color);
-}
-
-.orangespan {
-  color: var(--main-theme-color)
-}
+    .orangespan {
+      color: var(--main-theme-color)
+    }
