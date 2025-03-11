@@ -97,6 +97,15 @@
       
     }      
 
+    .sitetitle {
+      transition: all 0.2s ease-in-out;
+    }
+
+    .sitetitle:hover {
+      cursor: pointer;
+      transform: scale(1.1, 1.1);
+    }
+
     .container {
       margin-top: 20px;
       width: 700px;

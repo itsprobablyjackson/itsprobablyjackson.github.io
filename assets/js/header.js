@@ -16,3 +16,7 @@ async function loadHeader() {
 }
 
 if (!preloadedHeader) loadHeader()
+
+document.querySelector('.title').addEventListener('click', () => {
+    window.location.href = '/'
+});
