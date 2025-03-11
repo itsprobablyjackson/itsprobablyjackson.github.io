@@ -267,7 +267,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
         <div class="blindContainer">
           <h1>Fun <span class="orangespan">anywhere</span>.</h1>
 
-          <button class="playnow">Play Now</button>
+          <button class="playnow" onclick="redirect('/games')">Play Now</button>
         </div>
 
         <div class="container blurbg">
@@ -299,5 +299,9 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
       window.location.href = element.getAttribute('data-l')
         });
     });
+
+    function redirect(link) {
+      window.location.href = link
+    }
   </script>
 </html>
