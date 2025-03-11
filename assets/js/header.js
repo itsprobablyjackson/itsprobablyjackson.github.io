@@ -1,5 +1,11 @@
 const preloadedHeader = document.querySelector('.mainheader')
 
+function ael() {
+    document.querySelector('.sitetitle').addEventListener('click', () => {
+        window.location.href = '/'
+    });
+}
+
 async function loadHeader() {
     console.log('no header')
     
@@ -13,10 +19,8 @@ async function loadHeader() {
 
     document.querySelector('body').prepend(newHeader)
 
+    ael()
 }
 
-if (!preloadedHeader) loadHeader()
+if (!preloadedHeader){ loadHeader() } else {ael()}
 
-document.querySelector('.sitetitle').addEventListener('click', () => {
-    window.location.href = '/'
-});
